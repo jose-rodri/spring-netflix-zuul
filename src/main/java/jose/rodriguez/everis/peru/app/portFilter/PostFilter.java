@@ -1,3 +1,4 @@
+
 package jose.rodriguez.everis.peru.app.portFilter;
 
 import com.netflix.zuul.ZuulFilter;
@@ -7,23 +8,23 @@ public class PostFilter extends ZuulFilter {
 
   @Override
   public String filterType() {
-      return "post";
+    return "post";
   }
 
   @Override
   public int filterOrder() {
-      return 1;
+    return 1;
   }
 
   @Override
   public boolean shouldFilter() {
-      return true;
+    return true;
   }
 
   @Override
   public Object run() throws ZuulException {
-      System.out.println("Inside Post Filter");
+    System.out.println("Inside Post Filter");
 
-      return null;
+    return null;
   }
 }
